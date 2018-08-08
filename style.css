@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette:100,200,300,400,500,600,700');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+    font-family: "open-sans", "Open Sans", "Arial", sans-serif;
+    font-weight: 200;
+    background-color: #fafafa;
+}
+
+/*-------------------- heading ------------------*/
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: #f3b104;
+}
+
+header .social-links {
+    min-width: 4rem;
+    min-height: 2rem;
+    width: 4rem;
+    height: 2rem;
+}
+
+footer .social-links {
+    min-width: 7rem;
+    min-height: 1rem;
+    width: 7rem;
+    height: 1rem;
+}
+header .social-links li,
+footer .social-links li {
+    display: inline;
+    margin: 2px;
+}
+
+footer {
+    font-size: small;
+    height: 3rem;
+    background-color: #f3b104;
+}
+
+footer .contact-us {
+    margin-right: 10px;
+}
+
+.contact-us a {
+    text-decoration: none;
+}
+
+.logo {
+    background: url("band-assets/images/cover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 120px;
+    min-height: 120px;
+    height: 120px;
+    width: 120px;
+    border: 1px solid #bd2130;
+}
+
+#hey-hey {
+    font-family: 'Courgette', cursive, "open-sans", "Open Sans", "Arial", sans-serif;
+    color: #bd2130;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #fafafa;
+    transition: color 0.25s ease-in-out;
+}
+
+.nav-item a:hover {
+    color: #bd2130;
+}
+
+.nav-item.active-page {
+    border-bottom: 1px solid #bd2130;
+}
+
+#dropdownMenuLink {
+    background-color: #bd2130;
+    color: #f3b104;
+}
+
+.header-dropdown-menu,
+.header-dropdown-item {
+    background-color: #f3b104;
+}
+
+.header-dropdown-item {
+    color: #fafafa;
+}
+
+.header-dropdown-item:focus, .header-dropdown-item:hover {
+    color: #fafafa;
+    background-color: #bd2130;
+}
+
+#header-dropdown-item-active-page {
+    border:1px solid #bd2130;
+}
+
+.social-links a,
+.contact-us a {
+    color: #2e3131;
+    transition: color 0.25s ease-in-out;
+}
+
+.social-links a:hover,
+.contact-us a:hover {
+    color: #bd2130;
+}
+
+/*-------------------- Index.html Main Body ------------------*/
+
+.main-body {
+    padding: 1rem;
+}
+
+.main-body blockquote {
+    font-family: 'Courgette', cursive, "open-sans", "Open Sans", "Arial", sans-serif;
+    color: #bd2130;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.main-body blockquote cite {
+    /*font-family: 'Courgette', cursive, "open-sans", "Open Sans", "Arial", sans-serif;*/
+    color: #bd2130;
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+#ironically {
+    font-family: "open-sans", "Open Sans", "Arial", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: black;
+}
+
+/*----------------------------- Contact Page ----- */
+
+.contact-heading {
+    font-family: 'Courgette', cursive, "open-sans", "Open Sans", "Arial", sans-serif;
+    color: #bd2130;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.contact-center-form {
+    padding-top: 10px;
+    margin: 20px auto;
+    max-width: 70%;
+}
+.contact-center-form .form-group label,
+.contact-center-form .form-check{
+   color: #bd2130; 
+}
+
+.contact-center-form .form-group input,
+.contact-center-form .form-group textarea {
+   background-color: #f3b104; 
+}
+
+button[type="submit"] {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    background-color: #bd2130;
+    color: #fafafa;
+    border: 1px solid #f3b104;
+}
+
+button[type="submit"]:hover {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    background-color: #fafafa;
+    color: #bd2130;
+    border: 1px solid #bd2130;
+}
+
+/* ------------------------- SONGS CSS ------------- */
+.card {
+    margin: 30px 15px;
+    max-width: 320px;
+    min-width: 320px;
+    align-items: center;
+    background-color: #f3b104;
+}
+
+.card img {
+    max-height: 160px; 
+    max-width: 160px;
+    margin-top: -20px;
+    border: 1px solid #bd2130;
+}
+
+.card-text {
+    font-size: medium;
+}
+
+.card-subtitle {
+    font-style: italic;
+    
+}
+
+.list-group-item {
+    margin-top: 1rem;
+}
+
+/* ------------------------- Audio control------------- */
+
+audio:hover,
+audio:focus,
+audio:active {
+    -webkit-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+audio {
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -moz-box-shadow: 2px 2px 4px 0px #006773;
+    -webkit-box-shadow: 2px 2px 4px 0px #006773;
+    box-shadow: 2px 2px 4px 0px #006773;
+    -moz-border-radius: 7px 7px 7px 7px;
+    -webkit-border-radius: 7px 7px 7px 7px;
+    border-radius: 7px 7px 7px 7px;
+    width: 30rem;
+    min-width: 80%;
+    max-width: 90%;
+}
+
+

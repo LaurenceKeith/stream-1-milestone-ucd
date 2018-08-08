@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Monkees</title>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="d-flex">
+            <div>
+                <a href="index.html">
+                    <div class="logo"></div>
+                </a>
+            </div>
+            <!--Title and Navigation menu for medium+ screens-->
+            <div class="d-none d-md-flex flex-column ml-4">
+                <p id="hey-hey">Hey hey we're the Monkees!</p>
+                <ul class="navbar-nav flex-row justify-content-between">
+                    <li class="nav-item active-page">
+                        <a href="index.html"><span>Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="photos.html"><span>Photos</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="songs.html"><span>Songs</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html"><span>Private&nbsp;Gigs</span></a>
+                    </li>
+                </ul>
+            </div>
+            <!--Drop-down button for smaller screens-->
+            <div class="d-flex d-md-none align-items-center mx-2 mx-sm-3">
+                <div class="dropdown show">
+                    <a class="btn dropdown-toggle m-auto" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Explore!
+                    </a>
+                    <div class="dropdown-menu header-dropdown-menu" id="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a id="header-dropdown-item-active-page" class="dropdown-item header-dropdown-item" href="index.html">Home</a>
+                        <a class="dropdown-item header-dropdown-item" href="photos.html">Photos</a>
+                        <a class="dropdown-item header-dropdown-item" href="songs.html">Songs</a>
+                        <a class="dropdown-item header-dropdown-item" href="contact.html">Private&nbsp;Gigs</a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-start ml-auto">
+                <ul class="list-inline social-links">
+                    <li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a target="_blank" href="#"><i class="fa fa-pinterest"></i></a></li>
+                    <li><a target="_blank" href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a target="_blank" href="#"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+                <p class="contact-us"> <a href="contact.html"><small>Contact Us</small></a></p>
+            </div>
+        </div>
+    </header>
+    <div class="main-body d-flex flex-column align-items-center">
+        <blockquote cite="https://en.wikipedia.org/wiki/The_Monkees">
+            "A TV show about an imaginary band… that wanted to be the Beatles that was never successful"<cite> - Mickey Dolenz</cite>
+        </blockquote>
+        <p id="ironically">Ironically, the actor-musicians became one of the most successful bands of the 1960s.</p>
+        <div class="d-flex justify-content-center" style="width: 100%; background-color: #2e3131;">
+            <div class="container-video">
+                <video width="320" height="240" controls><source src="band-assets/video/TheMonkees.mp4" type="video/mp4"></video>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid d-flex">
+        <div>&copy;&nbsp;Laurence Herniman 2018</div>
+        <div class="d-flex ml-auto">
+            <p class="contact-us"> <a href="contact.html"><small>Contact&nbsp;Us</small></a></p>
+            <ul class="list-inline social-links">
+                <li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a target="_blank" href="#"><i class="fa fa-pinterest"></i></a></li>
+                <li><a target="_blank" href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a target="_blank" href="#"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+
+        </div>
+    </footer>
+</body>
+
+</html>
